@@ -46,7 +46,7 @@ public class CharacterMakerWizard : ScriptableWizard
         collider.center = new Vector3(0.0f, 0.5f, 0.0f);
 
         Rigidbody rigidbody = character.AddComponent<Rigidbody>();
-        rigidbody.angularDrag = 5.0f;
+        rigidbody.angularDamping = 5.0f;
         rigidbody.constraints = RigidbodyConstraints.FreezeRotation;
 
         if (behaviour != null)
